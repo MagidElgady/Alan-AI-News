@@ -14,9 +14,9 @@ const App = () => {
             key: alanKey,
             // When testCommand triggered, message
             // will pop up on screen
-            onCommand: ({ command }) => {
+            onCommand: ({ command, articles }) => {
                 if (command === 'newHeadlines') {
-                    alert('This code was executed!');
+                    console.log(articles);
                 }
             }
         })
