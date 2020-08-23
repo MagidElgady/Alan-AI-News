@@ -1,5 +1,6 @@
 import React from 'react';
-
+// Adds Alan AI to program
+import alanBtn from '@alan-ai/alan-sdk-web';
 
 const App = () => {
     return (
