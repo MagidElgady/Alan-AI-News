@@ -12,6 +12,13 @@ const App = () => {
         alanBtn({
             // API key
             key: alanKey,
+            // When testCommand triggered, message
+            // will pop up on screen
+            onCommand: ({ command }) => {
+                if (command === 'newHeadlines') {
+                    alert('This code was executed!');
+                }
+            }
         })
     }, [])
 
