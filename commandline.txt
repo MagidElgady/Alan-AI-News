@@ -1,0 +1,5 @@
+Following command used to install:
+alan-ai to read and sort all news based on user input
+material-ui/core for easy design changes to app
+classnames words-to-numbers to convert audio strings to numbers e.g. "15" to 15
+npm i @alan-ai/alan-sdk-web @material-ui/core classnames words-to-numbers
