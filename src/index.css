@@ -1,0 +1,20 @@
+# root, html, body {
+    /* Application takes up full height of screen */
+    height: 100vh;
+    
+}
+
+body {
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+* {
+    /* Takes padding and margin into consideration
+    when adjusting height and width */
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
