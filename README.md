@@ -29,16 +29,16 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 # Requirements
-To install the Alan AI button 
+To install the Alan AI button <br />
 import alanBtn from '@alan-ai/alan-sdk-web';
 
-Required for scroll function 
+Required for scroll function <br />
 import React, { useState, useEffect } from 'react';
 
-Used to convert spoken number from words to a number e.g. 'four' becomes 4
+Used to convert spoken number from words to a number e.g. 'four' becomes 4 <br />
 import wordsToNumbers from 'words-to-numbers';
 
-Material UI used for the font, grid styling and grow for the animations
+Material UI used for the font, grid styling and grow for the animations <br />
 import { Grid, Grow, Typography } from '@material-ui/core';
 
 
