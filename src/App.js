@@ -14,7 +14,8 @@ const alanKey = '0fa35faefbafc72ef792ac6aaac603472e956eca572e1d8b807a3e2338fdd0d
 const App = () => {
 
     const classes = useStyles();
-
+    // Index of article currently being read
+    const [activeArticle, setActiveArticle] = useState(-1);
     // Gives access to newsArticles that can be displayed later
     const [newsArticles, setNewsArticles] = useState([]);
 
@@ -28,6 +29,11 @@ const App = () => {
             onCommand: ({ command, articles }) => {
                 if (command === 'newHeadlines') {
                     setNewsArticles(articles);
+                    // Once article is read, colour at bottom
+                    // moves to next article
+                    setActiveArticle(-1);
+                } else if (command === 'highlight') {
+                    setActiveArticle((prevActiveArticle) => prevActiveArticle + 1);
                 }
             }
         })
@@ -41,7 +47,7 @@ const App = () => {
 
             </div>
             {/* Displays all the news articles beneath header */}
-            <NewsCards articles={newsArticles} />
+            <NewsCards articles={newsArticles} activeArticle={activeArticle} />
         </div>
     )
 };
