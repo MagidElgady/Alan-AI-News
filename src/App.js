@@ -36,6 +36,6 @@ const App = () => {
             <NewsCards articles={newsArticles} />
         </div>
     )
-}
+};
 
 export default App;
