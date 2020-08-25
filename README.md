@@ -57,6 +57,13 @@ Material UI used for the font, grid styling and grow for the animations <br />
 import { Grid, Grow, Typography } from '@material-ui/core';
 
 
+# CONFIGURATION
+-------------
+
+The module has no menu or modifiable settings. There is no configuration. When
+enabled, the module will prevent the links from appearing. To get the links
+back, disable the module and clear caches.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
