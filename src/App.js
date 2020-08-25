@@ -31,7 +31,10 @@ const App = () => {
 
     return (
         <div>
-            <h1>Alan AI News Application</h1>
+            <div className={classes.logoContainer}>
+                <img src="https://alan.app/voice/images/previews/preview.jpg" className={classes.alanLogo} alt="alan logo" />
+
+            </div>
             {/* Displays all the news articles beneath header */}
             <NewsCards articles={newsArticles} />
         </div>
