@@ -34,7 +34,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 # Requirements
-'@alan-ai/alan-sdk-web'
+@alan-ai/alan-sdk-web
 
 useState, useEffect
 
