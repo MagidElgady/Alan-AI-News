@@ -55,6 +55,8 @@ import wordsToNumbers from 'words-to-numbers';
 
 Material UI used for the font, grid styling and grow for the animations <br />
 import { Grid, Grow, Typography } from '@material-ui/core';
+
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
