@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+# Introduction
+Uses Alan AI and the ReactJS framework to present users with news article 
+based on voice input. 
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -29,10 +34,20 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 # Requirements
+'@alan-ai/alan-sdk-web'
+
+useState, useEffect
+
+wordstoNumbers
+
+@material-ui/core
+
+
+# Installation
 To install the Alan AI button <br />
 import alanBtn from '@alan-ai/alan-sdk-web';
 
-Required for scroll function <br />
+To install the Alan AI button <br />
 import React, { useState, useEffect } from 'react';
 
 Used to convert spoken number from words to a number e.g. 'four' becomes 4 <br />
@@ -40,8 +55,6 @@ import wordsToNumbers from 'words-to-numbers';
 
 Material UI used for the font, grid styling and grow for the animations <br />
 import { Grid, Grow, Typography } from '@material-ui/core';
-
-
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
