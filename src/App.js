@@ -5,10 +5,15 @@ import alanBtn from '@alan-ai/alan-sdk-web';
 // Imports NewsCards component
 import NewsCards from './components/NewsCards/NewsCards';
 
+// Import the Alan logo and style.js
+import useStyles from './styles.js';
+
 // API key from alan.app
 const alanKey = '0fa35faefbafc72ef792ac6aaac603472e956eca572e1d8b807a3e2338fdd0dc/stage';
 
 const App = () => {
+
+    const classes = useStyles();
 
     // Gives access to newsArticles that can be displayed later
     const [newsArticles, setNewsArticles] = useState([]);
