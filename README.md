@@ -29,14 +29,17 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 # Requirements
+To install the Alan AI button 
 import alanBtn from '@alan-ai/alan-sdk-web';
 
+Required for scroll function 
 import React, { useState, useEffect } from 'react';
 
+Used to convert spoken number from words to a number e.g. 'four' becomes 4
 import wordsToNumbers from 'words-to-numbers';
 
+Material UI used for the font, grid styling and grow for the animations
 import { Grid, Grow, Typography } from '@material-ui/core';
-
 
 
 ### `npm run eject`
@@ -56,4 +59,17 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 # Credits
+Used to access al the news information
+News API: <br />
+https://newsapi.org/
+
+
+Required to access Alan Studio and link with code
+Alan AI: <br />
+https://alan.app/
+
+YouTube tutorial followed:
+https://www.youtube.com/watch?v=rqw3OftE5sA
+
+
 
