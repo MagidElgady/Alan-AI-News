@@ -21,7 +21,7 @@ const NewsCards = ({ articles, activeArticle }) => {
     // Sets style function to 
     const classes = useStyles();
 
-    // If no new articles, display this
+    // If there are new articles, display this
     if (!articles.length) {
         return (
             <Grow in >
@@ -51,6 +51,7 @@ const NewsCards = ({ articles, activeArticle }) => {
                 {articles.map((article, i) => (
                     // Sets sizes for each device e.g. 12 spaces = 1 card for xsmall devices
                     <Grid key={i} item xs={12} sm={6} md={4} lg={3} style={{ display: 'flex' }} >
+                        {/* Used for scrolling */}
                         <NewsCard article={article} activeArticle={activeArticle} i={i} />
                     </Grid>
 
