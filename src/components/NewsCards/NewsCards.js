@@ -26,11 +26,11 @@ const NewsCards = ({ articles }) => {
                 {/* classes.container imports styles.js code */}
                 <Grid className={classes.container} container alignItems="stretch" spacing={3}>
                     {infoCards.map((infoCard) => (
-                        <Grid item xs={12} sm={6} md={4} lg={3} className={classes.info}>
+                        <Grid item xs={12} sm={6} md={4} lg={3} className={classes.infoCard}>
                             <div className={classes.card} style={{ backgroundColor: infoCard.color }}>
                                 <Typography variant="h5">{infoCard.title}</Typography>
                                 {/* If infoCard has no info, show following typography */}
-                                {infoCard.info ? (<Typography variant="h6"><strong> {/* Splits title into array and grabs last value in e.g. categories or terms */} {infoCard.title.split(' ')[2]}:</strong><br />{infoCard.info}{/* If info isn't found, return null */}</Typography>) : null}
+                                {infoCard.info ? <Typography variant="h6"><strong> {/* Splits title into array and grabs last value in e.g. categories or terms */} {infoCard.title.split(' ')[2]}</strong>: <br />{infoCard.info}{/* If info isn't found, return null */}</Typography> : null}
                                 <Typography variant="h6">Try saying: <br /> <i>{infoCard.text}</i></Typography>
                             </div>
 
