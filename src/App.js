@@ -32,6 +32,7 @@ const App = () => {
     return (
         <div>
             <h1>Alan AI News Application</h1>
+            {/* Displays all the news articles beneath header */}
             <NewsCards articles={newsArticles} />
         </div>
     )
