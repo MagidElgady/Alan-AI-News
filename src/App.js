@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 // Adds Alan AI to program
 import alanBtn from '@alan-ai/alan-sdk-web';
 
+import wordsToNumbers from 'words-to-numbers';
+
 // Imports NewsCards component
 import NewsCards from './components/NewsCards/NewsCards';
 
@@ -26,7 +28,7 @@ const App = () => {
             key: alanKey,
             // When testCommand triggered, message
             // will pop up on screen
-            onCommand: ({ command, articles }) => {
+            onCommand: ({ command, articles, number }) => {
                 if (command === 'newHeadlines') {
                     setNewsArticles(articles);
                     // Once article is read, colour at bottom
@@ -34,10 +36,26 @@ const App = () => {
                     setActiveArticle(-1);
                 } else if (command === 'highlight') {
                     setActiveArticle((prevActiveArticle) => prevActiveArticle + 1);
+                } else if (command === 'open') {
+                    // Used to convert words to numbers e.g. four to 4
+                    // TODO: Look up fuzzy and the wordsToNumber function
+                    const parsedNumber = number.length > 2 ? wordsToNumbers(number, { fuzzy: true }) : number;
+                    // parsedNumber[20] doesn't exist which doesn't make sense
+                    const article = articles[parsedNumber - 1];
+
+                    if (parsedNumber > 20) {
+                        alanBtn().playText('Please try that again...');
+                    } else if (article) {
+                        window.open(article.url, '_blank');
+                        alanBtn().playText('Opening...');
+                    } else {
+                        console.log(number);
+                        alanBtn().playText('Please try that again...');
+                    }
                 }
-            }
-        })
-    }, [])
+            },
+        });
+    }, []);
 
 
     return (

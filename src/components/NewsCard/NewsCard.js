@@ -22,14 +22,13 @@ const NewsCard = ({ article: { description, publishedAt, source, title, url, url
 
     // Run every time a new article is read (i or activeArticle or elRefs changes)
     useEffect(() => {
-        if (i === activeArticle && elRefs(activeArticle)) {
+        if (i === activeArticle && elRefs[activeArticle]) {
             scrollToRef(elRefs[activeArticle]);
         }
-
-    }, [i, activeArticle, elRefs])
+    }, [i, activeArticle, elRefs]);
 
     return (
-        <Card className={classNames(classes.card, activeArticle === i ? classes.activeCard : null)}>
+        <Card ref={elRefs[i]} className={classNames(classes.card, activeArticle === i ? classes.activeCard : null)}>
             {/* News Card will open article in new page when clicked on*/}
             <CardActionArea href={url} target="_blank">
                 {/* Displays image of news company or placeholder image */}

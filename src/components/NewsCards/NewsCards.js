@@ -15,6 +15,8 @@ const infoCards = [
     { color: '#283593', title: 'News by Sources', info: 'CNN, Wired, BBC News, Time, IGN, Buzzfeed, ABC News...', text: 'Give me the news from CNN' },
 ];
 
+// TODO: Add a back button in case the 'Go back' feature doesn't work!
+
 const NewsCards = ({ articles, activeArticle }) => {
     // Sets style function to 
     const classes = useStyles();
