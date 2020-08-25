@@ -45,16 +45,16 @@ wordstoNumbers
 
 # Installation
 To install the Alan AI button <br />
-import alanBtn from '@alan-ai/alan-sdk-web';
+`import alanBtn from '@alan-ai/alan-sdk-web';`
 
 To install the Alan AI button <br />
-import React, { useState, useEffect } from 'react';
+`import React, { useState, useEffect } from 'react';`
 
 Used to convert spoken number from words to a number e.g. 'four' becomes 4 <br />
-import wordsToNumbers from 'words-to-numbers';
+`import wordsToNumbers from 'words-to-numbers';`
 
 Material UI used for the font, grid styling and grow for the animations <br />
-import { Grid, Grow, Typography } from '@material-ui/core';
+`import { Grid, Grow, Typography } from '@material-ui/core';`
 
 
 # Configuration
