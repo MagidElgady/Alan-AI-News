@@ -4,11 +4,15 @@ import React from 'react';
 // and Typography is for font style
 import { Grid, Grow, Typography } from '@material-ui/core';
 
+import useStyles from './styles.js';
 import NewsCard from '../NewsCard/NewsCard';
 
 const NewsCards = ({ articles }) => {
+    const classes = useStyles();
+
     return (
         <Grow in >
+            {/* classes.container imports styles.js code */}
             <Grid classname={classes.container} container alignItems="stretch" spacing={3}>
                 {/* Loops through all news articles */}
                 {articles.map((article, i) => (
