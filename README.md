@@ -57,7 +57,7 @@ Material UI used for the font, grid styling and grow for the animations <br />
 import { Grid, Grow, Typography } from '@material-ui/core';
 
 
-# CONFIGURATION
+# Configuration
 -------------
 
 The module has no menu or modifiable settings. There is no configuration. When
