@@ -38,7 +38,7 @@ const App = () => {
                     setActiveArticle((prevActiveArticle) => prevActiveArticle + 1);
                 } else if (command === 'open') {
                     // Used to convert words to numbers e.g. four to 4
-                    // TODO: Look up fuzzy and the wordsToNumber function
+                    // Fuzzy matching enabled to get approximations of spoken numbers
                     const parsedNumber = number.length > 2 ? wordsToNumbers(number, { fuzzy: true }) : number;
                     // parsedNumber[20] doesn't exist which doesn't make sense
                     const article = articles[parsedNumber - 1];
