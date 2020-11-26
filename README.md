@@ -71,7 +71,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 # Credits
-Used to access al the news information
+Used to access all the news information
 News API: <br />
 https://newsapi.org/
 
